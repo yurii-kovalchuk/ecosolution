@@ -9,4 +9,10 @@ export const Button = styled.button`
 
   border-radius: 500px;
   background: var(--light-green-btn-color);
+
+  &:hover {
+    background: var(--green-btn-color);
+  }
+
+  transition: background-color 0.3s ease;
 `;
