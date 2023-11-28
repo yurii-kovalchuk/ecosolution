@@ -5,6 +5,10 @@
   --main-tx-color: #173d33;
 
   --main-bg-color: #f3f5fa;
+
+  --light-green-btn-color: #dcefd8;
+  --green-btn-color: #dcefd8;
+  --dark-green-btn-color: #dcefd8;
 }
 
 body {

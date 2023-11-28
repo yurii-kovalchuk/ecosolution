@@ -1,18 +1,16 @@
-import Container from "../Container/Container";
 import Logo from "./Logo/Logo";
 
-import { Head } from "./Header.styled";
+import { HeaderContainer } from "./Header.styled";
+import MenuButton from "./MenuButton/MenuButton";
 
 const Header = () => {
   return (
-    <>
-      <Head>
-        <Container>
-          <Logo />
-          <button type="button">menu</button>
-        </Container>
-      </Head>
-    </>
+    <header>
+      <HeaderContainer>
+        <Logo />
+        <MenuButton />
+      </HeaderContainer>
+    </header>
   );
 };
 
