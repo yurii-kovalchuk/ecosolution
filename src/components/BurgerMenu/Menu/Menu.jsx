@@ -1,9 +1,25 @@
-import { MenuContainer } from "./Menu.styled";
+import { useState } from "react";
 import PropTypes from "prop-types";
-
 import menuItems from "../../../assets/data/NavigationData.json";
+import CloseIcon from "../../../assets/media/close.svg?react";
+import ArrowRight from "../../../assets/media/arrow-right.svg?react";
+import Facebook from "../../../assets/media/facebook.svg?react";
+import Instagram from "../../../assets/media/instagram.svg?react";
+import {
+  MenuContainer,
+  CloseBtn,
+  CloseTxt,
+  Navigation,
+  SocialMedia,
+  NavItem,
+  NavLink,
+  NavTxt,
+  SocialLink,
+} from "./Menu.styled";
 
 const Menu = ({ onClose }) => {
+  const [activeLink, setActiveLink] = useState("main");
+
   const scroolToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -18,19 +34,49 @@ const Menu = ({ onClose }) => {
     evt.preventDefault();
     onClose();
     scroolToSection(id);
+    setActiveLink(id);
   };
 
   return (
     <MenuContainer>
-      <nav>
+      <div>
+        <CloseBtn type="button" onClick={onClose}>
+          <CloseIcon />
+          <CloseTxt>close</CloseTxt>
+        </CloseBtn>
+      </div>
+      <Navigation>
         <ul>
           {menuItems.map(({ id, title }) => (
-            <li key={id} onClick={(evt) => handleClick(id, evt)}>
-              <a href="/">{title}</a>
-            </li>
+            <NavItem key={id}>
+              <NavLink
+                href="/"
+                onClick={(evt) => handleClick(id, evt)}
+                $isActive={activeLink === id}
+              >
+                <NavTxt>{title}</NavTxt>
+                <ArrowRight />
+              </NavLink>
+            </NavItem>
           ))}
         </ul>
-      </nav>
+      </Navigation>
+      <SocialMedia>
+        <SocialLink
+          href="https://www.facebook.com/yurii.kovalchuk.7921"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Facebook />
+        </SocialLink>
+        <SocialLink
+          href="https://www.instagram.com/chasssit/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Instagram />
+        </SocialLink>
+      </SocialMedia>
     </MenuContainer>
   );
 };
