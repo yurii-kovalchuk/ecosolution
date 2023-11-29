@@ -10,6 +10,7 @@ export const HeaderSection = styled.header`
   background-color: ${(props) =>
     props.scrolled ? "var(--main-bg-color)" : "#ffffff"};
   transition: background-color 0.3s ease;
+  //
 `;
 
 export const HeaderContainer = styled(Container)`

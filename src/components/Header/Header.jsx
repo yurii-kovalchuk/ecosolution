@@ -19,7 +19,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <HeaderSection scrolled={scrolled}>
+      <HeaderSection $scrolled={scrolled}>
         <HeaderContainer>
           <Logo />
           <MenuButton />
