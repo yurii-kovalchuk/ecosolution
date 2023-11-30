@@ -10,6 +10,9 @@ export const MenuContainer = styled.div`
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
+  @media screen and (min-width: 768px) {
+    width: 320px;
+  }
 `;
 
 export const CloseBtn = styled.button`

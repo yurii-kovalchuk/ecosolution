@@ -6,17 +6,31 @@ export const Backdrop = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: rgba(23, 61, 51, 0.25);
   backdrop-filter: blur(2px);
 `;
 
-export const Content = styled.div`
-  width: calc(100vw - 40px);
-  height: calc(100vh - 72px);
+export const ContentContainer = styled.div`
+  height: 100%;
+  padding: 36px 20px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+
   @media screen and (min-width: 480px) {
     max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+    max-width: 768px;
+    padding: 36px 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1440px;
+    padding: 30px 100px;
   }
 `;

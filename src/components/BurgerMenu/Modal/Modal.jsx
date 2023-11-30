@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
-import { Backdrop, Content } from "./Modal.styled";
+import { Backdrop, ContentContainer } from "./Modal.styled";
 import Menu from "../Menu/Menu";
 
 const modalRoot = document.querySelector("#modal-root");
@@ -30,7 +30,9 @@ const MenuModal = ({ onClose }) => {
 
   return createPortal(
     <Backdrop onClick={onBackdropClick}>
-      <Content>{<Menu onClose={onClose} />}</Content>
+      <ContentContainer onClick={onBackdropClick}>
+        {<Menu onClose={onClose} />}
+      </ContentContainer>
     </Backdrop>,
     modalRoot
   );
