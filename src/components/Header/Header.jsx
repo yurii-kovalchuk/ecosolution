@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import MenuButton from "./MenuButton/MenuButton";
 import Logo from "./Logo/Logo";
-import { HeaderSection, HeaderContainer, Stopgap } from "./Header.styled";
+import {
+  HeaderSection,
+  HeaderContainer,
+  Stopgap,
+  Interactive,
+} from "./Header.styled";
+import GetInTouch from "./GetInTouch/GetInTouch";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,7 +28,10 @@ const Header = () => {
       <HeaderSection $scrolled={scrolled}>
         <HeaderContainer>
           <Logo />
-          <MenuButton />
+          <Interactive>
+            <MenuButton />
+            <GetInTouch />
+          </Interactive>
         </HeaderContainer>
       </HeaderSection>
       <Stopgap />

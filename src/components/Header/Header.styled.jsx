@@ -19,6 +19,13 @@ export const HeaderContainer = styled(Container)`
   align-items: center;
 `;
 
+export const Interactive = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+`;
+
 export const Stopgap = styled.div`
   height: 112px;
 `;

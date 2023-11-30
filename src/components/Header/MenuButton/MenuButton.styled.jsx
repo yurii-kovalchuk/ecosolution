@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const MenuButton = styled.button`
   padding: 12px;
 
   display: flex;

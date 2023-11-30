@@ -19,14 +19,16 @@ export const CloseBtn = styled.button`
   gap: 4px;
   transform: translateX(-4px);
   color: var(--white);
+  transition: color 0.3s ease;
   path {
     stroke: var(--white);
+    transition: stroke 0.3s ease;
   }
   &:hover {
     color: var(--green-btn-color);
-  }
-  &:hover path {
-    stroke: var(--green-btn-color);
+    path {
+      stroke: var(--green-btn-color);
+    }
   }
 `;
 
@@ -60,18 +62,20 @@ export const NavItem = styled.li`
 export const NavLink = styled.a`
   color: ${(props) =>
     props.$isActive ? "var(--green-btn-color)" : "rgba(255, 255, 255, 0.25)"};
+  transition: color 0.3s ease;
 
   path {
     stroke: ${(props) =>
       props.$isActive ? "var(--green-btn-color)" : "rgba(255, 255, 255, 0.25)"};
+    transition: stroke 0.3s ease;
   }
   &:hover {
     color: ${(props) =>
       props.$isActive ? "var(--green-btn-color)" : "var(--white)"};
-  }
-  &:hover path {
-    stroke: ${(props) =>
-      props.$isActive ? "var(--green-btn-color)" : "var(--white)"};
+    path {
+      stroke: ${(props) =>
+        props.$isActive ? "var(--green-btn-color)" : "var(--white)"};
+    }
   }
 `;
 
@@ -90,12 +94,15 @@ export const SocialMedia = styled.div`
 export const SocialLink = styled.a`
   margin-right: 8px;
   color: #fff;
+  transition: color 0.3s ease;
+  path {
+    transition: stroke 0.3s ease;
+  }
 
   &:hover {
     color: var(--green-btn-color);
-  }
-
-  &:hover path {
-    stroke: var(--green-btn-color);
+    path {
+      stroke: var(--green-btn-color);
+    }
   }
 `;

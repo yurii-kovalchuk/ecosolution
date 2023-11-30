@@ -8,4 +8,8 @@ export const ContainBox = styled.div`
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 `;
