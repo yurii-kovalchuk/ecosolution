@@ -1,4 +1,4 @@
-import IconLogo from "../../../assets/media/logo.svg?react";
+import IconLogo from "../../../assets/media/icons/logo.svg?react";
 import { WrapLogo } from "./Logo.styled";
 
 const Logo = () => {

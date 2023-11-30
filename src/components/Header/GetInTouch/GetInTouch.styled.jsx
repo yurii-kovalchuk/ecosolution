@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const GetInTouchBtn = styled.a`
+export const GetInTouchLink = styled.a`
   display: none;
 
   @media screen and (min-width: 768px) {

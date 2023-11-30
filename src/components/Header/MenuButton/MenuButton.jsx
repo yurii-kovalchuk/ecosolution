@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MenuModal from "../../BurgerMenu/Modal/Modal";
-import Icon from "../../../assets/media/menu.svg?react";
+import Icon from "../../../assets/media/icons/menu.svg?react";
 import { MenuButton } from "./MenuButton.styled";
 
 const MenuBtn = () => {

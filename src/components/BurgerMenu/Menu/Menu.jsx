@@ -1,10 +1,10 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import menuItems from "../../../assets/data/NavigationData.json";
-import CloseIcon from "../../../assets/media/close.svg?react";
-import ArrowRight from "../../../assets/media/arrow-right.svg?react";
-import Facebook from "../../../assets/media/facebook.svg?react";
-import Instagram from "../../../assets/media/instagram.svg?react";
+import CloseIcon from "../../../assets/media/icons/close.svg?react";
+import ArrowCornerIcon from "../../../assets/media/icons/arrow-corner.svg?react";
+import Facebook from "../../../assets/media/icons/facebook.svg?react";
+import Instagram from "../../../assets/media/icons/instagram.svg?react";
 import {
   MenuContainer,
   CloseBtn,
@@ -46,7 +46,7 @@ const Menu = ({ onClose }) => {
                 $isActive={activeLink === id}
               >
                 <NavTxt>{title}</NavTxt>
-                <ArrowRight />
+                <ArrowCornerIcon />
               </NavLink>
             </NavItem>
           ))}

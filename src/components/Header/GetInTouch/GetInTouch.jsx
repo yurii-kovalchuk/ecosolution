@@ -1,6 +1,6 @@
-import ArrowDownIcon from "../../../assets/media/arr-down.svg?react";
 import scroolToSection from "../../../utils/scrollToSection";
-import { GetInTouchBtn, GeyInTouchTxt } from "./GetInTouch.styled";
+import ArrowDownIcon from "../../../assets/media/icons/arr-down.svg?react";
+import { GetInTouchLink, GeyInTouchTxt } from "./GetInTouch.styled";
 
 const GetInTouch = () => {
   const handleClick = (id, evt) => {
@@ -8,10 +8,10 @@ const GetInTouch = () => {
     scroolToSection(id);
   };
   return (
-    <GetInTouchBtn href="/" onClick={(evt) => handleClick("contact-us", evt)}>
+    <GetInTouchLink href="/" onClick={(evt) => handleClick("contact-us", evt)}>
       <GeyInTouchTxt>Get in touch</GeyInTouchTxt>
       <ArrowDownIcon />
-    </GetInTouchBtn>
+    </GetInTouchLink>
   );
 };
 
