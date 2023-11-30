@@ -38,8 +38,14 @@ export const CloseBtn = styled.button`
 export const CloseTxt = styled.span`
   font-family: var(--second-font);
   font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.8px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -87,6 +93,9 @@ export const NavTxt = styled.span`
 
   font-family: var(--second-font);
   font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   letter-spacing: -0.96px;
 `;
 

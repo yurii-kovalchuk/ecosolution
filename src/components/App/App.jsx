@@ -1,41 +1,18 @@
-import ContactUs from "../../sections/ContactUs/ContactUs";
 import Header from "../Header/Header";
-import { Layout } from "./App.styled";
+import Main from "../../sections/Main/Main";
+import About from "../../sections/About/About";
+import Cases from "../../sections/Cases/Cases";
+import Questions from "../../sections/Questions/Questions";
+import ContactUs from "../../sections/ContactUs/ContactUs";
 
 function App() {
   return (
     <>
       <Header />
-
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-      <Layout>works!</Layout>
-
+      <Main />
+      <About />
+      <Cases />
+      <Questions />
       <ContactUs />
     </>
   );

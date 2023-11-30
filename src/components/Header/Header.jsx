@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
 import MenuButton from "./MenuButton/MenuButton";
 import Logo from "./Logo/Logo";
-import {
-  HeaderSection,
-  HeaderContainer,
-  Stopgap,
-  Interactive,
-} from "./Header.styled";
+import { HeaderSection, HeaderContainer, Interactive } from "./Header.styled";
 import GetInTouch from "./GetInTouch/GetInTouch";
 
 const Header = () => {
@@ -25,7 +20,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <HeaderSection $scrolled={scrolled}>
+      <HeaderSection $scrolled={scrolled} id="header">
         <HeaderContainer>
           <Logo />
           <Interactive>
@@ -34,7 +29,6 @@ const Header = () => {
           </Interactive>
         </HeaderContainer>
       </HeaderSection>
-      <Stopgap />
     </>
   );
 };
