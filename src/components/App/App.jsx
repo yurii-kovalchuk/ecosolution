@@ -1,3 +1,4 @@
+import ContactUs from "../../sections/ContactUs/ContactUs";
 import Header from "../Header/Header";
 import { Layout } from "./App.styled";
 
@@ -7,6 +8,35 @@ function App() {
       <Header />
 
       <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+      <Layout>works!</Layout>
+
+      <ContactUs />
     </>
   );
 }

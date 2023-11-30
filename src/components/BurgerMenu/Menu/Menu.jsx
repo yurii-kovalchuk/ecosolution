@@ -16,19 +16,10 @@ import {
   NavTxt,
   SocialLink,
 } from "./Menu.styled";
+import scroolToSection from "../../../utils/scrollToSection";
 
 const Menu = ({ onClose }) => {
   const [activeLink, setActiveLink] = useState("main");
-
-  const scroolToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const marginTop = 112;
-      const scrollToY =
-        section.getBoundingClientRect().top + window.scrollY - marginTop;
-      window.scrollTo({ top: scrollToY, behavior: "smooth" });
-    }
-  };
 
   const handleClick = (id, evt) => {
     evt.preventDefault();
