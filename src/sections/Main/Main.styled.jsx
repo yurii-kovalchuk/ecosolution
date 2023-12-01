@@ -11,7 +11,6 @@ export const MainSection = styled.section`
 `;
 
 export const MainTitle = styled.h1`
-  max-width: 320px;
   margin-bottom: 24px;
   box-sizing: border-box;
 
@@ -41,7 +40,6 @@ export const MainTitle = styled.h1`
 `;
 
 export const MainTxt = styled.p`
-  margin-bottom: 24px;
   color: var(--dark-green-btn-color);
   text-align: justify;
   font-family: var(--second-font);
@@ -50,25 +48,16 @@ export const MainTxt = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    width: 342px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 364px;
-  }
 `;
 
 export const MainWrapper = styled.div`
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--green-btn-color);
   @media screen and (min-width: 768px) {
     display: flex;
     padding-bottom: 26px;
-    border-bottom: 1px solid var(--green-btn-color);
   }
   @media screen and (min-width: 1280px) {
-    padding-right: 96px;
     padding-bottom: 28px;
   }
 `;
@@ -77,7 +66,19 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    width: 342px;
+    align-items: start;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 460px;
+    padding-right: 96px;
+  }
 `;
 
 export const MainLink = styled.a`
@@ -89,10 +90,19 @@ export const MainLink = styled.a`
 
   border-radius: 500px;
   border: 1px solid var(--green-btn-color);
+  color: var(--dark-green-btn-color);
+
+  transition: border-color 0.3s ease, background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    border-color: var(--dark-green-btn-color);
+    background-color: var(--dark-green-btn-color);
+    color: var(--green-btn-color);
+  }
 `;
 
 export const MainLinkTxt = styled.span`
-  color: var(--dark-green-btn-color);
   font-family: var(--second-font);
   font-size: 16px;
   font-style: normal;
