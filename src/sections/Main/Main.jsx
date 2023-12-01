@@ -5,11 +5,15 @@ import {
   MainSection,
   MainTitle,
   MainTxt,
-  MainWrapper,
-  TextWrapper,
+  MainWrap,
+  TextWrap,
   MainLink,
   MainLinkTxt,
   MainLinkIcon,
+  AddressWrap,
+  Contacts,
+  Copyright,
+  MainBackground,
 } from "./Main.styled";
 
 const Main = () => {
@@ -20,9 +24,9 @@ const Main = () => {
   return (
     <MainSection id="main">
       <Container>
-        <MainWrapper>
+        <MainWrap>
           <MainTitle>RENEWABLE ENERGY For any task</MainTitle>
-          <TextWrapper>
+          <TextWrap>
             <MainTxt>
               Development and implementation of renewable non-polluting energy
               sources, generating power generation using energy wind, sun,
@@ -34,11 +38,16 @@ const Main = () => {
                 <ArrowRightIcon />
               </MainLinkIcon>
             </MainLink>
-          </TextWrapper>
-        </MainWrapper>
-        <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
-        <span>office@ecosolution.com</span>
-        <div>background</div>
+          </TextWrap>
+        </MainWrap>
+        <AddressWrap>
+          <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
+          <Contacts>
+            <span>office@ecosolution.com</span>
+            <Copyright>ecosolution © 2023</Copyright>
+          </Contacts>
+        </AddressWrap>
+        <MainBackground></MainBackground>
       </Container>
     </MainSection>
   );

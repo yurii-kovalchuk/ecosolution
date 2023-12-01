@@ -1,4 +1,10 @@
 import styled from "styled-components";
+import mainM1x from "../../assets/media/images/main/img-m@1x.jpg";
+import mainM2x from "../../assets/media/images/main/img-m@2x.jpg";
+import mainT1x from "../../assets/media/images/main/img-t@1x.jpg";
+import mainT2x from "../../assets/media/images/main/img-t@2x.jpg";
+import mainD1x from "../../assets/media/images/main/img-d@1x.jpg";
+import mainD2x from "../../assets/media/images/main/img-d@2x.jpg";
 
 export const MainSection = styled.section`
   padding-top: 110px;
@@ -50,7 +56,7 @@ export const MainTxt = styled.p`
   letter-spacing: -0.64px;
 `;
 
-export const MainWrapper = styled.div`
+export const MainWrap = styled.div`
   padding-bottom: 24px;
   border-bottom: 1px solid var(--green-btn-color);
   @media screen and (min-width: 768px) {
@@ -62,7 +68,7 @@ export const MainWrapper = styled.div`
   }
 `;
 
-export const TextWrapper = styled.div`
+export const TextWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -75,7 +81,7 @@ export const TextWrapper = styled.div`
     align-items: start;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     width: 460px;
     padding-right: 96px;
   }
@@ -119,4 +125,80 @@ export const MainLinkIcon = styled.span`
 
   border-radius: 100px;
   background: var(--green-btn-color);
+`;
+
+export const AddressWrap = styled.div`
+  padding: 24px 0 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--dark-green-btn-color);
+  font-family: var(--second-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding: 16px 0 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 12px 0 36px;
+  }
+`;
+
+export const Contacts = styled(TextWrap)`
+  flex-direction: row;
+  padding: 0;
+`;
+
+export const Copyright = styled.span`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline;
+  }
+`;
+
+export const MainBackground = styled.div`
+  height: 200px;
+  background-image: url(${mainM1x});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(${mainM2x});
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 348px;
+    background-image: url(${mainT1x});
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(${mainT2x});
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 524px;
+    background-image: url(${mainD1x});
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(${mainD2x});
+    }
+  }
 `;
