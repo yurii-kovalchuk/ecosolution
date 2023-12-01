@@ -29,9 +29,8 @@ export const MainTitle = styled.h1`
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
-    max-width: 300px;
+    width: var(--tablet-width);
     margin-bottom: 0;
-    margin-right: auto;
 
     font-size: 48px;
     line-height: 48px;
@@ -61,6 +60,7 @@ export const MainWrap = styled.div`
   border-bottom: 1px solid var(--green-btn-color);
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 26px;
   }
   @media screen and (min-width: 1280px) {
@@ -77,12 +77,12 @@ export const TextWrap = styled.div`
   box-sizing: border-box;
 
   @media screen and (min-width: 768px) {
-    width: 342px;
+    width: var(--tablet-width);
     align-items: start;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 460px;
+    width: var(--desktop-width);
     padding-right: 96px;
   }
 `;

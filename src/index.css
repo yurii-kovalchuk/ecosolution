@@ -11,6 +11,9 @@
   --dark-green-btn-color: #173d33;
 
   --white: #fff;
+
+  --tablet-width: calc(50% - 12px);
+  --desktop-width: calc(50% - 160px);
 }
 
 body {

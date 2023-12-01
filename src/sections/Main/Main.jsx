@@ -25,7 +25,7 @@ const Main = () => {
     <MainSection id="main">
       <Container>
         <MainWrap>
-          <MainTitle>RENEWABLE ENERGY For any task</MainTitle>
+          <MainTitle>RENEWABLE ENERGY For any&nbsp;task</MainTitle>
           <TextWrap>
             <MainTxt>
               Development and implementation of renewable non-polluting energy

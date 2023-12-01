@@ -7,6 +7,7 @@ export const HeaderSection = styled.header`
   left: 0;
   right: 0;
   padding: 36px 0;
+  z-index: 1000;
   background-color: ${(props) =>
     props.$scrolled ? "var(--main-bg-color)" : "#ffffff"};
   transition: background-color 0.3s ease;
