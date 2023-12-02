@@ -6,7 +6,7 @@ import Menu from "../Menu/Menu";
 
 const modalRoot = document.querySelector("#modal-root");
 
-const MenuModal = ({ onClose }) => {
+const MenuModal = ({ onClose, setActiveLink, activeLink }) => {
   useEffect(() => {
     const onEscClick = (event) => {
       if (event.code === "Escape") {
@@ -31,7 +31,13 @@ const MenuModal = ({ onClose }) => {
   return createPortal(
     <Backdrop onClick={onBackdropClick}>
       <ContentContainer onClick={onBackdropClick}>
-        {<Menu onClose={onClose} />}
+        {
+          <Menu
+            active={activeLink}
+            setActive={setActiveLink}
+            onClose={onClose}
+          />
+        }
       </ContentContainer>
     </Backdrop>,
     modalRoot
@@ -42,4 +48,6 @@ export default MenuModal;
 
 MenuModal.propTypes = {
   onClose: PropTypes.func.isRequired,
+  activeLink: PropTypes.string,
+  setActiveLink: PropTypes.func,
 };

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 import menuItems from "../../../assets/data/NavigationData.json";
 import CloseIcon from "../../../assets/media/icons/close.svg?react";
@@ -18,14 +17,12 @@ import {
 } from "./Menu.styled";
 import scroolToSection from "../../../utils/scrollToSection";
 
-const Menu = ({ onClose }) => {
-  const [activeLink, setActiveLink] = useState("main");
-
+const Menu = ({ onClose, setActive, active }) => {
   const handleClick = (id, evt) => {
     evt.preventDefault();
     onClose();
     scroolToSection(id);
-    setActiveLink(id);
+    setActive(id);
   };
 
   return (
@@ -43,7 +40,7 @@ const Menu = ({ onClose }) => {
               <NavLink
                 href="/"
                 onClick={(evt) => handleClick(id, evt)}
-                $isActive={activeLink === id}
+                $isActive={active === id}
               >
                 <NavTxt>{title}</NavTxt>
                 <ArrowCornerIcon />
@@ -74,6 +71,8 @@ const Menu = ({ onClose }) => {
 
 Menu.propTypes = {
   onClose: PropTypes.func,
+  active: PropTypes.string,
+  setActive: PropTypes.func,
 };
 
 export default Menu;
