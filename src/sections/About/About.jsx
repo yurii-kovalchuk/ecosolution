@@ -1,4 +1,8 @@
 import Container from "../../components/Container/Container";
+import CircleIcon from "../../assets/media/icons/maximize-circle.svg?react";
+import GlobalIcon from "../../assets/media/icons/global-edit.svg?react";
+import CpuIcon from "../../assets/media/icons/cpu-charge.svg?react";
+import RankingIcon from "../../assets/media/icons/ranking.svg?react";
 import {
   AboutSection,
   GridContainer,
@@ -37,11 +41,17 @@ const About = () => {
         </AboutWrap>
         <GridContainer>
           <GridItem>
-            <ItemTitle>Openness</ItemTitle>
+            <ItemTitle>
+              <CircleIcon />
+              <span>Openness</span>
+            </ItemTitle>
             <ItemTxt>to the world, people, new ideas and projects</ItemTxt>
           </GridItem>
           <GridItem>
-            <ItemTitle>Responsibility</ItemTitle>
+            <ItemTitle>
+              <GlobalIcon />
+              <span>Responsibility</span>
+            </ItemTitle>
             <ItemTxt>
               we are aware that the results of our work have an impact on our
               lives and the lives of future generations
@@ -74,13 +84,19 @@ const About = () => {
             </picture>
           </GridImgItem>
           <GridItem>
-            <ItemTitle>Innovation</ItemTitle>
+            <ItemTitle>
+              <CpuIcon />
+              <span>Innovation</span>
+            </ItemTitle>
             <ItemTxt>
               we use the latest technology to implement non-standard solutions
             </ItemTxt>
           </GridItem>
           <GridItem>
-            <ItemTitle>Quality</ItemTitle>
+            <ItemTitle>
+              <RankingIcon />
+              <span>Quality</span>
+            </ItemTitle>
             <ItemTxt>
               we do not strive to be the first among others, but we want to be
               the best in our business

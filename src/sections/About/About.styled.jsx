@@ -85,9 +85,8 @@ export const AboutWrap = styled.div`
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-row: auto;
+  grid-auto-rows: 1fr;
   grid-gap: 24px;
-  align-items: stretch;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
@@ -99,22 +98,43 @@ export const GridContainer = styled.div`
 `;
 
 export const GridItem = styled.div`
-  box-sizing: border-box;
   padding: 12px;
+  box-sizing: border-box;
   background: #eaedf1;
+
+  @media screen and (min-width: 1280px) {
+    padding: 48px 24px;
+  }
 `;
 
-export const ItemTitle = styled.span`
+export const ItemTitle = styled.p`
   color: var(--dark-green-btn-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--main-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+    line-height: 48px;
+    svg {
+      height: 24px;
+      width: 24px;
+    }
+  }
 `;
 
 export const ItemTxt = styled.p`
+  position: relative;
   margin-top: 46px;
   color: var(--dark-green-btn-color);
   text-align: justify;
@@ -124,6 +144,30 @@ export const ItemTxt = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.56px;
+
+  &::before {
+    height: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    background-color: var(--green-btn-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 64px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 119px;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    &::before {
+      top: -24px;
+    }
+  }
 `;
 
 export const GridImgItem = styled.div`
@@ -136,4 +180,6 @@ export const GridImgItem = styled.div`
 
 export const AboutImg = styled.img`
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
