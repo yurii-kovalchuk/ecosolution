@@ -8,6 +8,7 @@ export const Backdrop = styled.div`
   height: 100vh;
   background: rgba(23, 61, 51, 0.25);
   backdrop-filter: blur(2px);
+  z-index: 1001;
 `;
 
 export const ContentContainer = styled.div`
