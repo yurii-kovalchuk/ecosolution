@@ -11,6 +11,7 @@
   --white: #fff;
 
   --tablet-width: calc(50% - 12px);
+  --desktop-width-half: calc(50% - 24px);
   --desktop-width: calc(50% - 160px);
 }
 
