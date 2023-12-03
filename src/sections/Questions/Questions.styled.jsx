@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 import Container from "../../components/Container/Container";
 
 export const QuestContainer = styled(Container)`
@@ -116,15 +116,10 @@ export const Question = styled.div`
 `;
 
 export const Answer = styled.div`
-  overflow: hidden;
-  height: ${(props) => (props.$isActive ? "auto" : "0")};
   margin-top: ${(props) => (props.$isActive ? "16px" : "0")};
-
-  ${({ $isActive }) =>
-    $isActive &&
-    css`
-      animation: ${fadeIn} 1.2s linear 1;
-    `}
+  display: grid;
+  grid-template-rows: ${(props) => (props.$isActive ? "1fr" : "0fr")};
+  transition: grid-template-rows 0.3s ease, margin-top 0.3s ease;
 
   color: var(--dark-green-btn-color);
   text-align: justify;
@@ -135,18 +130,13 @@ export const Answer = styled.div`
   line-height: normal;
   letter-spacing: -0.56px;
 
+  p {
+    overflow: hidden;
+  }
+
   @media screen and (min-width: 1280px) {
     margin-top: ${(props) => (props.$isActive ? "24px" : "0")};
     font-size: 16px;
-  }
-`;
-
-const fadeIn = keyframes`
-  from {
-    max-height: 0;
-  }
-  to {
-    max-height: 1000px;
   }
 `;
 
