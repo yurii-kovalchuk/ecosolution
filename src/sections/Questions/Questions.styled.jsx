@@ -151,6 +151,7 @@ const fadeIn = keyframes`
 `;
 
 export const ContactUsWrap = styled.div`
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
   justify-content: spacce-between;
