@@ -3,7 +3,6 @@ import valueFormatter from "../../utils/valueFormatter";
 import Container from "../../components/Container/Container";
 import {
   ElectricityMeasure,
-  ElectricitySection,
   ElectricityTitle,
   ElectricityValue,
   ValueWrap,
@@ -21,7 +20,7 @@ const Electricity = () => {
   }, []);
 
   return (
-    <ElectricitySection>
+    <section>
       <Container>
         <ElectricityTitle>
           Electricity we produced for all time
@@ -31,7 +30,7 @@ const Electricity = () => {
           <ElectricityMeasure>kWh</ElectricityMeasure>
         </ValueWrap>
       </Container>
-    </ElectricitySection>
+    </section>
   );
 };
 

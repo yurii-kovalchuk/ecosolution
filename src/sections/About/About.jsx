@@ -4,7 +4,6 @@ import GlobalIcon from "../../assets/media/icons/global-edit.svg?react";
 import CpuIcon from "../../assets/media/icons/cpu-charge.svg?react";
 import RankingIcon from "../../assets/media/icons/ranking.svg?react";
 import {
-  AboutSection,
   GridContainer,
   GridItem,
   GridImgItem,
@@ -27,7 +26,7 @@ import about2D2x from "../../assets/media/images/about/img2-d@2x.jpg";
 
 const About = () => {
   return (
-    <AboutSection id="about">
+    <section id="about">
       <Container>
         <AboutWrap>
           <AboutTitle>Main values of our company</AboutTitle>
@@ -104,7 +103,7 @@ const About = () => {
           </GridItem>
         </GridContainer>
       </Container>
-    </AboutSection>
+    </section>
   );
 };
 

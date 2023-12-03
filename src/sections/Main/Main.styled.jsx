@@ -8,14 +8,11 @@ import mainD2x from "../../assets/media/images/main/img-d@2x.jpg";
 
 export const MainSection = styled.section`
   margin-top: 110px;
-  padding-bottom: 36px;
   @media screen and (min-width: 768px) {
     margin-top: 128px;
-    padding-bottom: 100px;
   }
   @media screen and (min-width: 1280px) {
     margin-top: 176px;
-    padding-bottom: 120px;
   }
 `;
 

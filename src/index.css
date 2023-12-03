@@ -2,8 +2,6 @@
   --main-font: "Oswald", sans-serif;
   --second-font: "Fira Sans", sans-serif;
 
-  --main-tx-color: #173d33;
-
   --main-bg-color: #f3f5fa;
 
   --light-green-btn-color: #dcefd8;
@@ -60,4 +58,16 @@ button {
   background-color: transparent;
   outline: none;
   border: transparent;
+}
+
+section {
+  padding-bottom: 36px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
 }
