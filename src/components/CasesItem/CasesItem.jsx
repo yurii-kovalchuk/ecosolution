@@ -5,7 +5,7 @@ import {
   CaseInfo,
   CaseTitleWrap,
   CaseTitle,
-  CaseBtn,
+  CaseLink,
   CaseDescriptWrap,
 } from "./CasesItem.styled";
 
@@ -32,9 +32,9 @@ const CasesItem = ({ info }) => {
       <CaseInfo>
         <CaseTitleWrap>
           <CaseTitle>{title}</CaseTitle>
-          <CaseBtn>
+          <CaseLink>
             <ArrowIcon />
-          </CaseBtn>
+          </CaseLink>
         </CaseTitleWrap>
         <CaseDescriptWrap>
           <span>{description}</span>

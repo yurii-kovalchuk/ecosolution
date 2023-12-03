@@ -22,3 +22,19 @@ export const CasesTitle = styled.h2`
     line-height: 48px;
   }
 `;
+
+export const CarouselWrap = styled.div`
+  overflow: hidden;
+`;
+
+export const CasesList = styled.ul`
+  @media screen and (min-width: 768px) {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+`;

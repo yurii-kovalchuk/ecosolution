@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const CaseImg = styled.img`
   width: 100%;
-  height: 100%;
+  height: 168px;
   object-fit: cover;
+  @media screen and (min-width: 1280px) {
+    height: 296px;
+  }
 `;
 
 export const CaseInfo = styled.div`
@@ -53,7 +56,7 @@ export const CaseTitle = styled.h3`
   }
 `;
 
-export const CaseBtn = styled.a`
+export const CaseLink = styled.a`
   padding: 16px;
   margin: 3px 0;
   display: flex;
@@ -80,6 +83,14 @@ export const CaseBtn = styled.a`
     svg path {
       stroke: var(--green-btn-color);
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 6px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0;
   }
 `;
 
