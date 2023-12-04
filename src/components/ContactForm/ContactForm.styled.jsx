@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const Form = styled.form`
   padding: 36px 12px;
   background: #eaedf1;
+
+  @media screen and (min-width: 768px) {
+    padding: 36px 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 48px;
+  }
 `;
 
 export const Label = styled.label`
@@ -17,6 +25,10 @@ export const Label = styled.label`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 12px;
+  }
 `;
 
 export const Input = styled.input`
@@ -49,6 +61,16 @@ export const Input = styled.input`
     line-height: normal;
     letter-spacing: -0.72px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+
+    ::placeholder {
+      font-size: 20px;
+      letter-spacing: -0.8px;
+    }
+  }
 `;
 
 export const Textarea = styled.textarea`
@@ -80,6 +102,10 @@ export const Textarea = styled.textarea`
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.72px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
   }
 `;
 
