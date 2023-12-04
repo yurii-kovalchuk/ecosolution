@@ -155,6 +155,9 @@ export const AddressWrap = styled.div`
 export const Contacts = styled(TextWrap)`
   flex-direction: row;
   padding: 0;
+  a {
+    line-height: normal;
+  }
 `;
 
 export const Copyright = styled.span`

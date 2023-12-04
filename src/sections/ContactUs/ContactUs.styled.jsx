@@ -25,11 +25,22 @@ export const ContactUsTitle = styled.h2`
 `;
 
 export const ContactsWrap = styled.div`
+  padding-right: 76px;
   display: flex;
   gap: 24px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    width: var(--tablet-width);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: var(--desktop-width-half);
+    gap: 32 px;
+  }
 `;
 
 export const ContactsBadge = styled.span`
@@ -43,6 +54,10 @@ export const ContactsBadge = styled.span`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 `;
 
 export const PhoneList = styled.ul`
@@ -59,7 +74,6 @@ export const ContactsLink = styled.a`
   align-items: center;
 
   color: var(--dark-green-btn-color);
-  text-align: justify;
   font-family: var(--second-font);
   font-size: 20px;
   font-style: normal;
@@ -67,10 +81,19 @@ export const ContactsLink = styled.a`
   line-height: normal;
   letter-spacing: -0.8px;
 
+  svg {
+    flex-shrink: 0;
+  }
+
   &:hover {
     svg path {
       stroke: var(--green-btn-color);
     }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    letter-spacing: -0.96px;
   }
 `;
 
@@ -95,4 +118,34 @@ export const SocialLink = styled.a`
       stroke: var(--green-btn-color);
       color: var(--green-btn-color);
     }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+`;
+
+export const FormWrap = styled.div`
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    width: var(--tablet-width);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: var(--desktop-width-half);
+  }
+`;
+
+export const ContactUsWrap = styled.div`
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 48px;
+  }
 `;

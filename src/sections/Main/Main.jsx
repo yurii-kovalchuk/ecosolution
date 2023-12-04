@@ -41,9 +41,17 @@ const Main = () => {
           </TextWrap>
         </MainWrap>
         <AddressWrap>
-          <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
+          <a
+            href="https://maps.app.goo.gl/msprbJhQzirMxe1q8"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
+          </a>
           <Contacts>
-            <span>office@ecosolution.com</span>
+            <a href="mailto: office@ecosolution.com">
+              <span>office@ecosolution.com</span>
+            </a>
             <Copyright>ecosolution © 2023</Copyright>
           </Contacts>
         </AddressWrap>
