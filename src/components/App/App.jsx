@@ -5,6 +5,7 @@ import Cases from "../../sections/Cases/Cases";
 import Questions from "../../sections/Questions/Questions";
 import ContactUs from "../../sections/ContactUs/ContactUs";
 import Electricity from "../../sections/Electricity/Electricity";
+import Footer from "../Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Cases />
       <Questions />
       <ContactUs />
+      <Footer />
     </>
   );
 }

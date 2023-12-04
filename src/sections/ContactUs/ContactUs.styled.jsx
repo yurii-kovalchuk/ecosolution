@@ -83,6 +83,9 @@ export const ContactsLink = styled.a`
 
   svg {
     flex-shrink: 0;
+    path {
+      transition: stroke 0.3s ease;
+    }
   }
 
   &:hover {
@@ -113,15 +116,20 @@ export const SocialLink = styled.a`
   justify-content: center;
   align-items: center;
 
+  svg path {
+    transition: stroke 0.3s ease, color 0.3s ease;
+  }
+
   &:hover {
     svg path {
       stroke: var(--green-btn-color);
       color: var(--green-btn-color);
     }
   }
-  
+
   @media screen and (min-width: 1280px) {
     padding: 0;
+  }
 `;
 
 export const FormWrap = styled.div`
