@@ -11,7 +11,8 @@ import {
   SocialIcons,
   SocialLink,
   AddressWrap,
-  Copyright,
+  Wrapper,
+  MailWrap,
 } from "./Footer.styled";
 
 const Footer = () => {
@@ -23,32 +24,39 @@ const Footer = () => {
     <footer>
       <Container>
         <FootContainer>
-          <FootHead>
-            <Logo />
-            <FootLinkIcon href="/" onClick={(evt) => handleClick("main", evt)}>
-              <ArrowRightIcon />
-            </FootLinkIcon>
-          </FootHead>
-          <SocialIcons>
-            <li>
-              <SocialLink
-                href="https://www.facebook.com/yurii.kovalchuk.7921"
-                rel="noopener noreferrer"
-                target="_blank"
+          <Wrapper>
+            <FootHead>
+              <Logo />
+              <FootLinkIcon
+                href="/"
+                onClick={(evt) => handleClick("main", evt)}
               >
-                <FacebookIcon />
-              </SocialLink>
-            </li>
-            <li>
-              <SocialLink
-                href="https://www.instagram.com/chasssit/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <InstagramIcon />
-              </SocialLink>
-            </li>
-          </SocialIcons>
+                <ArrowRightIcon />
+              </FootLinkIcon>
+            </FootHead>
+
+            <SocialIcons>
+              <li>
+                <SocialLink
+                  href="https://www.facebook.com/yurii.kovalchuk.7921"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FacebookIcon />
+                </SocialLink>
+              </li>
+              <li>
+                <SocialLink
+                  href="https://www.instagram.com/chasssit/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <InstagramIcon />
+                </SocialLink>
+              </li>
+            </SocialIcons>
+          </Wrapper>
+
           <AddressWrap>
             <a
               href="https://maps.app.goo.gl/msprbJhQzirMxe1q8"
@@ -57,9 +65,10 @@ const Footer = () => {
             >
               <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
             </a>
-            <a href="mailto: office@ecosolution.com">
+
+            <MailWrap href="mailto: office@ecosolution.com">
               <span>office@ecosolution.com</span>
-            </a>
+            </MailWrap>
             <span>ecosolution © 2023</span>
           </AddressWrap>
         </FootContainer>

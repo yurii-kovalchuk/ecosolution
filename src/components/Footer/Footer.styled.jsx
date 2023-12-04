@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const FootContainer = styled.div`
   padding: 24px 0;
   border-top: 1px solid var(--green-btn-color);
+  @media screen and (min-width: 768px) {
+    padding: 40px 0;
+  }
 `;
 
 export const FootHead = styled.div`
@@ -39,6 +42,12 @@ export const FootLinkIcon = styled.a`
   }
 `;
 
+export const Wrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+`;
+
 export const SocialIcons = styled.ul`
   margin-bottom: 24px;
   display: flex;
@@ -47,6 +56,30 @@ export const SocialIcons = styled.ul`
 
   svg path {
     stroke: var(--dark-green-btn-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: calc(50% - 12px);
+    transform: translateX(100%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: var(--desktop-width);
+  }
+`;
+
+export const MailWrap = styled.a`
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: calc(50% - 12px);
+    transform: translateX(100%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: var(--desktop-width);
   }
 `;
 
@@ -73,6 +106,7 @@ export const AddressWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  position: relative;
 
   color: var(--dark-green-btn-color);
   font-family: var(--second-font);
@@ -88,10 +122,6 @@ export const AddressWrap = styled.div`
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    padding: 16px 0 40px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding: 12px 0 36px;
   }
 `;
 

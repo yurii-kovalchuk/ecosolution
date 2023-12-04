@@ -31,12 +31,14 @@ const ContactForm = () => {
         .email("Wrong Email")
         .required("Email cannot be empty"),
       phone: Yup.string()
-        .matches(/^3[0-9]{9}$/, "Wrong Phone")
+        .matches(/^3[0-9]{11}$/, "Wrong Phone")
         .required("Phone cannot be empty"),
       message: Yup.string().min(3, "Too short").max(300, "Too long"),
     }),
-    onSubmit: (values) => {
+    onSubmit: (values, formik) => {
       console.log(values);
+      alert("Success!");
+      formik.resetForm();
     },
   });
   return (
